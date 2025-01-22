@@ -25,6 +25,7 @@ staticfiles/
 # Environment variables
 .env
 .env.*
+!.env.example
 
 # Pytest
 .cache/
