@@ -82,16 +82,33 @@ source ../venv/bin/activate   # For macOS/Linux
 ## Project Structure
 ```bash
 zeeshan-shafeek-django-boiler-plate/
-├── django_boilerplate/        # Django project files
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-├── manage.py                  # Django entry point
-├── tools/                     # Utility scripts
+├── README.md
+├── LICENSE
+├── django_boilerplate/      # Main Django project files
+│   ├── manage.py            # Django entry point
+│   ├── requirements.txt
+│   ├── .env.example         # Example environment variables
+│   ├── apps/
+│   │   ├── users/           # Custom user management app
+│   │   │   ├── __init__.py
+│   │   │   ├── admin.py
+│   │   │   ├── apps.py
+│   │   │   ├── models.py
+│   │   │   ├── tests.py
+│   │   │   ├── views.py
+│   │   │   └── migrations/
+│   │   │       └── __init__.py
+│   │   └── utils/           # Shared utilities
+│   │       └── models.py    # BaseModel, Activable, Auditable
+│   ├── django_boilerplate/
+│   │   ├── __init__.py
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+├── tools/                   # Utility scripts
 │   └── generate_env_example.py
-├── venv/                      # Virtual environment (ignored by Git)
+├── venv/                    # Virtual environment (ignored by Git)
 ├── .gitignore
 ├── LICENSE
 ├── README.md
