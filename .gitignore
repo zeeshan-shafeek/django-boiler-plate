@@ -1,0 +1,85 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+venv/
+.env/
+
+# Django stuff:
+*.log
+db.sqlite3
+media/
+
+# Migrations
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Static files
+staticfiles/
+
+# Environment variables
+.env
+.env.*
+
+# Pytest
+.cache/
+
+# Django Extensions (e.g., Graph Models)
+*.dot
+*.pdf
+*.png
+*.svg
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE / Editor configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# macOS-specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Node.js modules (if using for frontend)
+node_modules/
+
+# Docker files
+*.docker
+*.dockerfile
+docker-compose.override.yml
+
+# Build files
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Test database files
+*.sqlite3-journal
